@@ -51,7 +51,7 @@ a {
   font-size: 13px;
   padding: 18px;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: 1px #ddd solid;
 }
 
 #name-cont {
@@ -304,46 +304,36 @@ a:hover {
 }
 
 #name:focus {
-  outline: skyblue;
-  background-color: rgb(241, 246, 247);
-  box-shadow: 0 1px 2px rgba(0, 200, 255, 0.292),
-    0 2px 4px rgba(77, 181, 255, 0.26), 0 4px 8px rgba(0, 183, 255, 0.174),
-    0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07),
-    0 32px 64px rgba(0, 0, 0, 0.07);
+  outline: 0;
+  background-color: #f7feff;
+  border-color: #007185;
+  box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
 }
 
 #mobile:focus {
-  outline: skyblue;
-  background-color: rgb(241, 246, 247);
-  box-shadow: 0 1px 2px rgba(0, 200, 255, 0.292),
-    0 2px 4px rgba(77, 181, 255, 0.26), 0 4px 8px rgba(0, 183, 255, 0.174),
-    0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07),
-    0 32px 64px rgba(0, 0, 0, 0.07);
+  outline: 0;
+  background-color: #f7feff;
+  border-color: #007185;
+  box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
 }
 
 #select:focus {
-  outline: skyblue;
-  background-color: rgb(241, 246, 247);
-  box-shadow: 0 1px 2px rgba(0, 200, 255, 0.292),
-    0 2px 4px rgba(77, 181, 255, 0.26), 0 4px 8px rgba(0, 183, 255, 0.174),
-    0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07),
-    0 32px 64px rgba(0, 0, 0, 0.07);
+  outline: 0;
+  background-color: #f7feff;
+  border-color: #007185;
+  box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
 }
 
 #email:focus {
-  outline: skyblue;
-  background-color: rgb(241, 246, 247);
-  box-shadow: 0 1px 2px rgba(0, 200, 255, 0.292),
-    0 2px 4px rgba(77, 181, 255, 0.26), 0 4px 8px rgba(0, 183, 255, 0.174),
-    0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07),
-    0 32px 64px rgba(0, 0, 0, 0.07);
+  outline: 0;
+  background-color: #f7feff;
+  border-color: #007185;
+  box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
 }
 
 #password:focus {
-  outline: skyblue;
-  background-color: rgb(241, 246, 247);
-  box-shadow: 0 1px 2px rgba(0, 200, 255, 0.292),
-    0 2px 4px rgba(77, 181, 255, 0.26), 0 4px 8px rgba(0, 183, 255, 0.174),
-    0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07),
-    0 32px 64px rgba(0, 0, 0, 0.07);
+  outline: 0;
+  background-color: #f7feff;
+  border-color: #007185;
+  box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
 }
