@@ -42,11 +42,16 @@ myform.addEventListener("submit",function(event){
         data.push(obj)
     
         localStorage.setItem("signup",JSON.stringify(data))
+        let a=document.createElement("a")
+        a.setAttribute("href","../Login page/login.html")
+        a.click()
     }
     
     document.getElementById("name").value=""
     document.getElementById("mobile").value=""
     document.getElementById("email").value=""
     document.getElementById("password").value=""
+
+
     
 })
