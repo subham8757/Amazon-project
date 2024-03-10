@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 
@@ -257,3 +258,339 @@
 .border:hover{
     border: 1px solid white;
 }
+
+
+#flag-container{
+    position: relative;
+}
+
+#flag-container-content{
+    width: 240px;
+    height: auto;
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    top: calc(95%);
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+    display: none;
+
+}
+
+#background {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#flag-container:hover 
+#flag-container-content{
+    display: block;
+}
+
+#flag-container:hover #background{
+    display: block;
+}
+
+#english{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+
+#first-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#first-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+#first-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+hr{
+    margin-top: 13px;
+}
+
+
+
+
+#hindi{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+
+#second-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+#second-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+#second-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+
+
+
+#tamil{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+
+#third-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+
+#third-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+
+#third-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+#telgu{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+#fourth-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+
+#fourth-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+
+#fourth-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+#kannada{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+#fifth-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+
+#fifth-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+
+#fifth-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+#malayalam{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+#sixth-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+
+
+#sixth-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+#sixth-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+#bengali{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+#seventh-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+
+
+#seventh-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+#seventh-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+#marathi{
+    width: 18px;
+    height: 18px;
+    accent-color: #c45500;
+}
+#eighth-lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+
+#eighth-lang label{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+#eighth-lang label:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+#learn{
+    margin-top: 17px;
+    margin-left: 22px;
+}
+
+
+#learn a{
+    text-decoration: none;
+    font-size: 13px;
+    color:#0066c0;
+    font-family: sans-serif;
+}
+
+#p{
+    display: flex;
+    gap: 3px;
+    margin-top: 15px;
+}
+
+#p p{
+   font-size: 13px;
+   color: black;
+   font-family: sans-serif;
+   font-weight: 100;
+}
+
+
+#change{
+    margin-top: 15px;
+    margin-left: 22px;
+}
+
+#change a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #0066c0;
+
+}
+
+#flag2{
+    width: 17px;
+    height: 15px;
+}
+
+#flagimg2{
+    width: 100%;
+    height: 100%;
+}
+

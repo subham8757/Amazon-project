@@ -310,3 +310,59 @@ footer {
   text-decoration: underline;
   cursor: pointer;
 }
+
+
+
+#keepsignindiv{
+  width: 100%;
+  height: 18px;
+  margin-top: 25px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+#keepsignindiv p{
+   font-size: 13px;
+   line-height: 19px;
+
+}
+
+
+#keepsignindiv a{
+  text-decoration: none;
+  color: #0066C0;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+#keepsignindiv a:hover{
+  text-decoration: underline;
+  color: #c45500;
+}
+
+
+#labelforpassword{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#labelforpassword a{
+  font-family: sans-serif;
+  text-decoration: none;
+    color: #0066C0;
+    font-size: 13px;
+    line-height: 19px;
+  
+}
+
+
+#labelforpassword a:hover{
+  
+  text-decoration: underline;
+  color: #c45500;
+}

@@ -39,27 +39,41 @@ myform.addEventListener("submit", function (event) {
 
   let password = document.getElementById("password").value;
 
+  let flag=false;
+
   for (let i = 0; i < allusers.length; i++) {
     if (
       allusers[i].email === currectuser[0] ||
       (allusers[i].mobile === currectuser[0] &&
         allusers[i].password === password)
     ) {
-      let a = document.createElement("a");
-      a.setAttribute("href", "../../Home page/index.html");
-      a.click();
-
-      console.log("match");
-      console.log(currectuser);
-    }else{
-        
-         document.getElementById("password").value=""
-         console.log("not match")
-         let password=document.getElementById("password")
-         password.style.border="1px solid red"
-         password.style.boxShadow="0 0 0 0.5px red, 0 1px 2px rgba(15,17,17,.5) inset"
-         password.setAttribute("placeholder","Please check your password")
-         
+        flag=true;
+        break;
     }
   }
+
+
+  if(flag){
+    let a = document.createElement("a");
+    a.setAttribute("href", "../../Home page/index.html");
+    a.click();
+
+    console.log("match");
+    console.log(currectuser);
+
+  }else{
+
+    document.getElementById("password").value=""
+    console.log("not match")
+    let password=document.getElementById("password")
+    password.style.border="1px solid red"
+    password.style.boxShadow="0 0 0 0.5px red, 0 1px 2px rgba(15,17,17,.5) inset"
+    password.setAttribute("placeholder","Please check your password")
+
+  }
+
+
+
+
+ 
 });

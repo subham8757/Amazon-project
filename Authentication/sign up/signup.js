@@ -13,6 +13,11 @@ myform.addEventListener("submit", function (event) {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
 
+  if(name=="" || mobile=="" || email=="" || password==""){
+    alert("Please fill all the details")
+  }else{
+
+    
   let obj = {
     name,
     mobile,
@@ -43,4 +48,7 @@ myform.addEventListener("submit", function (event) {
   document.getElementById("mobile").value = "";
   document.getElementById("email").value = "";
   document.getElementById("password").value = "";
+
+  }
+
 });
