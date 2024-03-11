@@ -5,6 +5,9 @@
     font-family: sans-serif;
 }
 
+body{
+    position: relative;
+}
 
 
 #navbar{
@@ -271,6 +274,7 @@
     background-color: white;
     position: absolute;
     top: calc(95%);
+    left: 0;
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
     display: none;
@@ -284,7 +288,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.138);
 }
 
 #flag-container:hover 
@@ -295,6 +299,8 @@
 #flag-container:hover #background{
     display: block;
 }
+
+
 
 #english{
     width: 18px;
@@ -537,8 +543,6 @@ hr{
 
 
 
-
-
 #eighth-lang label:hover{
     color: #c45500;
     text-decoration: underline;
@@ -592,5 +596,273 @@ hr{
 #flagimg2{
     width: 100%;
     height: 100%;
+}
+
+
+
+#signin-container{
+    position: relative;
+}
+
+
+#signin-cont{
+    position: absolute;
+    width: 500px;
+    border-radius: 5px;
+    height: auto;
+    top: calc(100%);
+    color: black;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+    padding: 15px;
+    right: -40%;
+   
+}
+
+
+
+
+
+#signin-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    display: none;
+}
+
+
+#signin-container:hover #signin-cont{
+    display: block;
+}
+
+
+#background:hover #signin-cont{
+    display: block;
+}
+
+
+#signin-cont button{
+    width: 220px;
+    height: 33px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffd814;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#homepage-signin{
+    width: 100%;
+    box-shadow: 0 -20px 10px -20px rgba(0, 0, 0, 0.059) inset;
+}
+
+
+#signin-cont p,a{
+      text-align: center;
+      margin-top: 7px;
+      font-size: 11px;
+      font-family: sans-serif;
+      padding-bottom: 10px;
+
+}
+
+
+#signin-cont a{
+    text-decoration: none;
+    color: #0055aa;
+}
+
+#signin-cont a:hover{
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+
+#homepage-signin-content{
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+}
+
+#left-content{
+    width: 50%;
+    box-shadow: -20px 0 10px -20px rgba(0,0,0,0.10) inset;
+}
+
+#left-content p{
+    text-align: start;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.anchor {
+    text-align: start;
+    margin-top: 7px;
+    
+}
+
+#right-content{
+    width: 50%;
+    margin-left: 15px;
+}
+
+
+#right-content p{
+    text-align: start;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+
+
+.content{
+    font-size: 13px;
+}
+
+
+#hamburger-content{
+    height: 40px;
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px 15px;
+    justify-content: space-evenly;
+    
+}
+
+.all{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    height: 40px;
+    padding: 5px;
+}
+
+.all i{
+    font-size: 20px;
+}
+
+.all p{
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    
+}
+
+.all:hover{
+    border: 0.8px solid white;
+}
+
+
+
+
+#slider-content{
+    width: 100%;
+    height: 600px;
+}
+
+
+#poster{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#hamburger{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 40px;
+    padding: 5px;
+   
+
+}
+
+#slide-content{
+    width: 365px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    overflow: scroll;
+    display: none;
+    
+}
+
+#user{
+    background-color: #232f3e;
+    display: flex;
+    padding: 13px 36px;
+    align-items: center;
+    gap: 10px;
+}
+
+#user i{
+    font-size: 25px;
+}
+
+#user p{
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.cat{
+    background-color: white;
+    color: black;
+    
+}
+
+.cat h1{
+    margin-top: 7px;
+    height: 44px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 13px 36px;
+}
+
+.cat p{
+    width: 365px;
+    height: 42px;
+    font-size: 14px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 13px 36px;
+}
+
+.cat p:hover{
+    background-color: #eaeded;
+}
+
+
+#hamburger-backgroud {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    margin-left: 365px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.729);
+}
+
+#cross {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
