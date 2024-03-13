@@ -57,158 +57,225 @@ click2.addEventListener("click", function () {
 
 let carddata = [
   {
-    title: "Revamp your home in style", 
+    title: "Revamp your home in style",
     content: [
-      { name: "Cushion covers, bedsheets & more", poster: "carddataimages/img1.jpg" },
+      {
+        name: "Cushion covers, bedsheets & more",
+        poster: "carddataimages/img1.jpg",
+      },
       { name: "Figurines, vases and more", poster: "carddataimages/img2.jpg" },
       { name: "Home storage", poster: "carddataimages/img3.jpg" },
-      { name: "Lighting solutions", poster: "carddataimages/img4.jpg" }
-    ]
+      { name: "Lighting solutions", poster: "carddataimages/img4.jpg" },
+    ],
   },
 
   {
-    title: "Appliances for your home | Up to 55% off", 
+    title: "Appliances for your home | Up to 55% off",
     content: [
       { name: "Air conditioners", poster: "carddataimages/img5.jpg" },
       { name: "Refrigerators", poster: "carddataimages/img6.jpg" },
       { name: "Microwaves", poster: "carddataimages/img7.jpg" },
-      { name: "Washing machines", poster: "carddataimages/img8.jpg" }
-    ]
+      { name: "Washing machines", poster: "carddataimages/img8.jpg" },
+    ],
   },
 
   {
-    title: "Up to 60% off | Styles for men", 
+    title: "Up to 60% off | Styles for men",
     content: [
       { name: "Clothing", poster: "carddataimages/img9.jpg" },
       { name: "Footwear", poster: "carddataimages/img10.jpg" },
       { name: "Watches", poster: "carddataimages/img11.jpg" },
-      { name: "BAGS & WALLETS", poster: "carddataimages/img12.jpg" }
-    ]
+      { name: "BAGS & WALLETS", poster: "carddataimages/img12.jpg" },
+    ],
   },
 
-
   {
-    title: "Starting ₹99 | All your home improvement needs", 
+    title: "Starting ₹99 | All your home improvement needs",
     content: [
-      { name: "Cleaning Spin mops, wipes & more", poster: "carddataimages/img13.jpg" },
-      { name: "Bath accessories Bathroom hardware & accessories", poster: "carddataimages/img14.jpg" },
-      { name: "Hand tools Hammers, screwdrivers & more", poster: "carddataimages/img15.jpg" },
-      { name: "Electricals Extension boards, plugs & more", poster: "carddataimages/img16.jpg" }
-    ]
+      {
+        name: "Cleaning Spin mops, wipes & more",
+        poster: "carddataimages/img13.jpg",
+      },
+      {
+        name: "Bath accessories Bathroom hardware & accessories",
+        poster: "carddataimages/img14.jpg",
+      },
+      {
+        name: "Hand tools Hammers, screwdrivers & more",
+        poster: "carddataimages/img15.jpg",
+      },
+      {
+        name: "Electricals Extension boards, plugs & more",
+        poster: "carddataimages/img16.jpg",
+      },
+    ],
   },
 
   {
-    title: "Up to 75% off | Headphones", 
+    title: "Up to 75% off | Headphones",
     content: [
       { name: "boAt Up to 75% off | boAt", poster: "carddataimages/img17.jpg" },
-      { name: "boultUp to 75% off | boult", poster: "carddataimages/img18.jpg" },
-      { name: "Noise Up to 75% off | Noise", poster: "carddataimages/img19.jpg" },
-      { name: "Up to 75% off | Zebronics See", poster: "carddataimages/img20.jpg" }
-    ]
+      {
+        name: "boultUp to 75% off | boult",
+        poster: "carddataimages/img18.jpg",
+      },
+      {
+        name: "Noise Up to 75% off | Noise",
+        poster: "carddataimages/img19.jpg",
+      },
+      {
+        name: "Up to 75% off | Zebronics See",
+        poster: "carddataimages/img20.jpg",
+      },
+    ],
   },
 
   {
-    title: "Up to 60% off | Styles for women", 
+    title: "Up to 60% off | Styles for women",
     content: [
       { name: "Women's Clothing", poster: "carddataimages/img21.jpg" },
       { name: "Footwear+Handbags", poster: "carddataimages/img22.jpg" },
       { name: "Watches", poster: "carddataimages/img23.jpg" },
-      { name: "Fashion jewellery", poster: "carddataimages/img24.jpg" }
-    ]
+      { name: "Fashion jewellery", poster: "carddataimages/img24.jpg" },
+    ],
   },
 
-
   {
-    title: "Shop TVs by Your Preferred Size | Starting ₹6,999", 
+    title: "Shop TVs by Your Preferred Size | Starting ₹6,999",
     content: [
-      { name: "Budget TVs | Up to 60% off", poster: "carddataimages/img25.jpg" },
-      { name: "4K TVs | Up to 24 months No Cost EMI", poster: "carddataimages/img26.jpg" },
-      { name: "Big Screens | Free installation", poster: "carddataimages/img27.jpg" },
-      { name: "Ultra Premium TVs | Up to 50% off", poster: "carddataimages/img28.jpg" }
-    ]
+      {
+        name: "Budget TVs | Up to 60% off",
+        poster: "carddataimages/img25.jpg",
+      },
+      {
+        name: "4K TVs | Up to 24 months No Cost EMI",
+        poster: "carddataimages/img26.jpg",
+      },
+      {
+        name: "Big Screens | Free installation",
+        poster: "carddataimages/img27.jpg",
+      },
+      {
+        name: "Ultra Premium TVs | Up to 50% off",
+        poster: "carddataimages/img28.jpg",
+      },
+    ],
   },
 
-
-
   {
-    title: "Revamp your home in style", 
+    title: "Revamp your home in style",
     content: [
-      { name: "Cushion covers, bedsheets & more", poster: "carddataimages/img29.jpg" },
+      {
+        name: "Cushion covers, bedsheets & more",
+        poster: "carddataimages/img29.jpg",
+      },
       { name: "Figurines, vases and more", poster: "carddataimages/img29.jpg" },
       { name: "Home storage", poster: "carddataimages/img30.jpg" },
-      { name: "Lighting solutions", poster: "carddataimages/img31.jpg" }
-    ]
+      { name: "Lighting solutions", poster: "carddataimages/img31.jpg" },
+    ],
   },
 ];
 
+display(carddata);
+
+function display(data) {
+  for (let i = 0; i < data.length; i++) {
+    let card = document.createElement("div");
+    card.setAttribute("class", "card");
+
+    let title = document.createElement("p");
+    title.setAttribute("class", "title");
+    title.innerText = data[i].title;
+
+    let cardbottom = document.createElement("div");
+    cardbottom.setAttribute("class", "cardbottom");
+
+    let a = document.createElement("a");
+    a.innerText = "Explore all";
+
+    a.setAttribute("class", "explore");
+
+    card.append(title, cardbottom, a);
+
+    document.getElementById("card-content").append(card);
+
+    for (let j = 0; j < data[i].content.length; j++) {
+      let subcard = document.createElement("div");
+      subcard.setAttribute("class", "subcard");
+
+      let subcardimgdiv = document.createElement("div");
+      subcardimgdiv.setAttribute("class", "subcardimgdiv");
+
+      let img = document.createElement("img");
+      img.setAttribute("src", data[i].content[j].poster);
+      img.setAttribute("class", "cardbottomimg");
+
+      subcardimgdiv.append(img);
+
+      let title = document.createElement("p");
+      title.innerText = data[i].content[j].name;
+      title.setAttribute("class", "cardbottomtext");
+
+      subcard.append(subcardimgdiv, title);
+
+      cardbottom.append(subcard);
+    }
+  }
+}
 
 
+let mobiledata=[
+  {poster:"mobiledataimg/img1.jpg" , title:"Redmi 13C" , deal:"Limited time deal" ,discount:"25% off"},
+  {poster:"mobiledataimg/img2.jpg" , title:"iQOO Neo9 Pro 5G" , deal:"Limited time deal" ,discount:"20% off"},
+  {poster:"mobiledataimg/img3.jpg" , title:"iQOO Z7 Pro 5G" , deal:"Limited time deal" ,discount:"15% off"},
+  {poster:"mobiledataimg/img4.jpg" , title:"iQOO 12 5G " , deal:"Limited time deal" ,discount:"28% off"},
+  {poster:"mobiledataimg/img5.jpg" , title:"realme narzo 60X 5G" , deal:"Limited time deal" ,discount:"29% off"},
+  {poster:"mobiledataimg/img6.jpg" , title:"realme narzo 60 5G" , deal:"Limited time deal" ,discount:"30% off"},
+  {poster:"mobiledataimg/img7.jpg" , title:"iQOO Z6 Lite 5G" , deal:"Limited time deal" ,discount:"25% off"},
+  {poster:"mobiledataimg/img8.jpg" , title:"Redmi 12 5G " , deal:"Limited time deal" ,discount:"10% off"},
+  {poster:"mobiledataimg/img9.jpg" , title:"iQOO 12 5G " , deal:"Limited time deal" ,discount:"25% off"},
+  {poster:"mobiledataimg/img10.jpg" , title:"Redmi 13C" , deal:"Limited time deal" ,discount:"5% off"}
 
-display(carddata)
+]
 
-function display(data){
+mobiledatashow(mobiledata)
+
+function mobiledatashow(data){
 
      for(let i=0; i<data.length; i++){
 
          let card=document.createElement("div")
-         card.setAttribute("class","card")
-         
-         let title=document.createElement("p")
-         title.setAttribute("class","title")
-         title.innerText=data[i].title
+         card.setAttribute("class","mobile")
 
-         let cardbottom=document.createElement("div")
-         cardbottom.setAttribute("class","cardbottom")
 
-         let a=document.createElement("a")
-         a.innerText="Explore all"
+         let cardimgdiv=document.createElement("div")
+         cardimgdiv.setAttribute("class","cardimgdiv")
 
-         a.setAttribute("class","explore")
 
-         card.append(title,cardbottom,a)
-      
+         let img=document.createElement("img")
+         img.setAttribute("src",data[i].poster)
+         img.setAttribute("class","mobileimages")
 
-         
-         document.getElementById("card-content").append(card)
+         cardimgdiv.append(img)
 
-         for(let j=0; j<data[i].content.length; j++){
-             
-             let subcard=document.createElement("div")
-             subcard.setAttribute("class","subcard")
+        
 
-             let subcardimgdiv=document.createElement("div")
-             subcardimgdiv.setAttribute("class","subcardimgdiv")
 
-             let img=document.createElement("img")
-             img.setAttribute("src" ,data[i].content[j].poster)
-             img.setAttribute("class","cardbottomimg")
+         let deal=document.createElement("p")
+         deal.innerText=data[i].discount
+         deal.setAttribute("class","deal")
 
-             subcardimgdiv.append(img)
 
-             let title=document.createElement("p")
-             title.innerText=data[i].content[j].name
-             title.setAttribute("class","cardbottomtext")
+         let name =document.createElement("p")
+         name.innerText=data[i].title
+         name.setAttribute("class","mobilename")
 
-             subcard.append(subcardimgdiv,title)
 
-             cardbottom.append(subcard)
-         }
 
-           
+         card.append(cardimgdiv,deal,name)
+
+         document.getElementById("mobiledata-bottom").append(card)
+
+
      }
-
-    
-
-    
-     
-
-     
 }
-
-
-
-
-
-
-
-

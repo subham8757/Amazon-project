@@ -781,7 +781,7 @@ a {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 60%;
+  top: 22%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -851,3 +851,116 @@ a {
     line-height: 19px;
     font-weight: 600;
 }
+
+#mobiledata-container{
+    width: 100%;
+    height: auto;
+    margin-top: 700px;
+    padding: 0 42px;
+   
+}
+
+#mobile-cont{
+    height: 367px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
+}
+
+#mobiledata-head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+#mobiledata-head{
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+#mobiledata-head p{
+    margin-left: 10px;
+    
+}
+
+#mobiledata-head a{
+    font-size: 14px;
+    font-family: sans-serif;
+     margin-left: 10px;
+     text-decoration: none;
+}
+
+#mobiledata-bottom{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    overflow-y: hidden;
+
+}
+
+.mobile{
+    min-width: 200px;
+    height: 400px;
+    
+    margin-left: 10px;
+    padding: 10px;
+    
+}
+
+.cardimgdiv{
+    width: 100%;
+    height: 200px;
+}
+
+.mobileimages{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.deal{
+    width: fit-content;
+    background-color: red;
+    padding: 3px 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.mobilename{
+    margin-top: 5px;
+    font-size: 15px;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cacaca;
+    border-radius:20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dfdfdf; 
+  }
+
+
+
+
+
