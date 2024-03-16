@@ -223,59 +223,95 @@ function display(data) {
   }
 }
 
+let mobiledata = [
+  {
+    poster: "mobiledataimg/img1.jpg",
+    title: "Redmi 13C",
+    deal: "Limited time deal",
+    discount: "25% off",
+  },
+  {
+    poster: "mobiledataimg/img2.jpg",
+    title: "iQOO Neo9 Pro 5G",
+    deal: "Limited time deal",
+    discount: "20% off",
+  },
+  {
+    poster: "mobiledataimg/img3.jpg",
+    title: "iQOO Z7 Pro 5G",
+    deal: "Limited time deal",
+    discount: "15% off",
+  },
+  {
+    poster: "mobiledataimg/img4.jpg",
+    title: "iQOO 12 5G ",
+    deal: "Limited time deal",
+    discount: "28% off",
+  },
+  {
+    poster: "mobiledataimg/img5.jpg",
+    title: "realme narzo 60X 5G",
+    deal: "Limited time deal",
+    discount: "29% off",
+  },
+  {
+    poster: "mobiledataimg/img6.jpg",
+    title: "realme narzo 60 5G",
+    deal: "Limited time deal",
+    discount: "30% off",
+  },
+  {
+    poster: "mobiledataimg/img7.jpg",
+    title: "iQOO Z6 Lite 5G",
+    deal: "Limited time deal",
+    discount: "25% off",
+  },
+  {
+    poster: "mobiledataimg/img8.jpg",
+    title: "Redmi 12 5G ",
+    deal: "Limited time deal",
+    discount: "10% off",
+  },
+  {
+    poster: "mobiledataimg/img9.jpg",
+    title: "iQOO 12 5G ",
+    deal: "Limited time deal",
+    discount: "25% off",
+  },
+  {
+    poster: "mobiledataimg/img10.jpg",
+    title: "Redmi 13C",
+    deal: "Limited time deal",
+    discount: "5% off"
+  },
+];
 
-let mobiledata=[
-  {poster:"mobiledataimg/img1.jpg" , title:"Redmi 13C" , deal:"Limited time deal" ,discount:"25% off"},
-  {poster:"mobiledataimg/img2.jpg" , title:"iQOO Neo9 Pro 5G" , deal:"Limited time deal" ,discount:"20% off"},
-  {poster:"mobiledataimg/img3.jpg" , title:"iQOO Z7 Pro 5G" , deal:"Limited time deal" ,discount:"15% off"},
-  {poster:"mobiledataimg/img4.jpg" , title:"iQOO 12 5G " , deal:"Limited time deal" ,discount:"28% off"},
-  {poster:"mobiledataimg/img5.jpg" , title:"realme narzo 60X 5G" , deal:"Limited time deal" ,discount:"29% off"},
-  {poster:"mobiledataimg/img6.jpg" , title:"realme narzo 60 5G" , deal:"Limited time deal" ,discount:"30% off"},
-  {poster:"mobiledataimg/img7.jpg" , title:"iQOO Z6 Lite 5G" , deal:"Limited time deal" ,discount:"25% off"},
-  {poster:"mobiledataimg/img8.jpg" , title:"Redmi 12 5G " , deal:"Limited time deal" ,discount:"10% off"},
-  {poster:"mobiledataimg/img9.jpg" , title:"iQOO 12 5G " , deal:"Limited time deal" ,discount:"25% off"},
-  {poster:"mobiledataimg/img10.jpg" , title:"Redmi 13C" , deal:"Limited time deal" ,discount:"5% off"}
+mobiledatashow(mobiledata);
 
-]
+function mobiledatashow(data) {
+  for (let i = 0; i < data.length; i++) {
+    let card = document.createElement("div");
+    card.setAttribute("class", "mobile");
 
-mobiledatashow(mobiledata)
+    let cardimgdiv = document.createElement("div");
+    cardimgdiv.setAttribute("class", "cardimgdiv");
 
-function mobiledatashow(data){
+    let img = document.createElement("img");
+    img.setAttribute("src", data[i].poster);
+    img.setAttribute("class", "mobileimages");
 
-     for(let i=0; i<data.length; i++){
+    cardimgdiv.append(img);
 
-         let card=document.createElement("div")
-         card.setAttribute("class","mobile")
+    let deal = document.createElement("p");
+    deal.innerText = data[i].discount;
+    deal.setAttribute("class", "deal");
 
+    let name = document.createElement("p");
+    name.innerText = data[i].title;
+    name.setAttribute("class", "mobilename");
 
-         let cardimgdiv=document.createElement("div")
-         cardimgdiv.setAttribute("class","cardimgdiv")
+    card.append(cardimgdiv, deal, name);
 
-
-         let img=document.createElement("img")
-         img.setAttribute("src",data[i].poster)
-         img.setAttribute("class","mobileimages")
-
-         cardimgdiv.append(img)
-
-        
-
-
-         let deal=document.createElement("p")
-         deal.innerText=data[i].discount
-         deal.setAttribute("class","deal")
-
-
-         let name =document.createElement("p")
-         name.innerText=data[i].title
-         name.setAttribute("class","mobilename")
-
-
-
-         card.append(cardimgdiv,deal,name)
-
-         document.getElementById("mobiledata-bottom").append(card)
-
-
-     }
+    document.getElementById("mobiledata-bottom").append(card);
+  }
 }
