@@ -282,7 +282,7 @@ let mobiledata = [
     poster: "mobiledataimg/img10.jpg",
     title: "Redmi 13C",
     deal: "Limited time deal",
-    discount: "5% off"
+    discount: "5% off",
   },
 ];
 
