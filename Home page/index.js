@@ -182,7 +182,7 @@ function display(data) {
   for (let i = 0; i < data.length; i++) {
     let card = document.createElement("div");
     card.setAttribute("class", "card");
-
+    
     let title = document.createElement("p");
     title.setAttribute("class", "title");
     title.innerText = data[i].title;
