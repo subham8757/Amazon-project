@@ -11,13 +11,16 @@ body {
 }
 
 #navbar {
+  width: 100%;
   height: 60px;
   background-color: #131921;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
-  position: relative;
+  position: fixed;
+  top: 0%;
+  z-index: 1000;
 }
 
 #logodiv {
@@ -630,6 +633,7 @@ a {
 }
 
 #hamburger-content {
+  margin-top: 60px;
   height: 40px;
   background-color: #232f3e;
   display: flex;
@@ -637,6 +641,7 @@ a {
   color: white;
   padding: 5px 15px;
   justify-content: space-evenly;
+ 
 }
 
 .all {
@@ -646,6 +651,7 @@ a {
   align-items: center;
   height: 40px;
   padding: 5px;
+  
 }
 
 .all i {
@@ -684,12 +690,12 @@ a {
   width: 365px;
   height: 100vh;
   background-color: white;
-  position: absolute;
+  position: fixed;
   left: 0%;
   top: 0%;
   display: none;
   animation: mymove 0.4s;
-  z-index: 1000;
+  z-index: 100000;
 }
 
 @keyframes mymove {
@@ -762,16 +768,18 @@ a {
   position: fixed;
   top: 0px;
   left: 0;
-  margin-left: 365px;
+  
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.729);
+  z-index: 10000;
 }
 
 #cross {
   font-size: 30px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 375px;
+  margin-top: 15px;
+  
 }
 
 #card-content {
@@ -854,7 +862,7 @@ a {
 #mobiledata-container {
   width: 100%;
   height: auto;
-  margin-top: 680px;
+  margin-top: 740px;
   padding: 0 42px;
 }
 
