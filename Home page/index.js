@@ -41,6 +41,7 @@ click.addEventListener("click", function () {
   let show = document.getElementById("slide-content");
 
   show.style.display = "block";
+  document.querySelector('body').style.overflow = "hidden"
 
   let hamburgershow = document.getElementById("hamburger-backgroud");
   hamburgershow.style.display = "block";
@@ -50,12 +51,13 @@ let click2 = document.getElementById("cross");
 click2.addEventListener("click", function () {
   let hamburgershow = document.getElementById("hamburger-backgroud");
   hamburgershow.style.display = "none";
+  document.querySelector('body').style.overflow = "auto"
 
   let show = document.getElementById("slide-content");
   show.style.display = "none";
 });
 
-let carddata = [
+let cardData = [
   {
     title: "Revamp your home in style",
     content: [
@@ -176,7 +178,7 @@ let carddata = [
   },
 ];
 
-display(carddata);
+display(cardData);
 
 function display(data) {
   for (let i = 0; i < data.length; i++) {
@@ -315,3 +317,66 @@ function mobiledatashow(data) {
     document.getElementById("mobiledata-bottom").append(card);
   }
 }
+
+
+
+
+
+let left=document.getElementById("left-arrow")
+let right=document.getElementById("right-arrow")
+
+let slider=document.getElementById("slider-content");
+let slidernumber=0;
+let sliderImages = [
+  {
+    src : "slider images/first.jpg",
+    name : "poster"
+  },
+  {
+    src : "slider images/second.jpg",
+    name : "poster"
+  }, {
+    src : "slider images/third.jpg",
+    name : "poster"
+  }, {
+    src : "slider images/fourth.jpg",
+    name : "poster"
+  }, {
+    src : "slider images/fifith.jpg",
+    name : "poster"
+  }, {
+    src : "slider images/sixth.jpg",
+    name : "poster"
+  }
+];
+
+ setCurrenSliderImage(slidernumber)
+
+function setCurrenSliderImage(index){
+  let currentImg = sliderImages[index];
+  let className = `poster-${index}`
+  slider.innerHTML = `<img src="${currentImg.src}" alt=${currentImg.name} class="poster ${className}" />`;
+}
+
+console.log(sliderImages)
+
+
+right.addEventListener("click",function(){
+  if(slidernumber === sliderImages.length){
+    return;
+  }
+  slidernumber++
+  setCurrenSliderImage(slidernumber)
+ 
+})
+
+left.addEventListener("click",function(){
+  slidernumber--
+  setCurrenSliderImage(slidernumber)
+  return;
+ 
+
+})
+
+
+

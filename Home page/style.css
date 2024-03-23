@@ -61,7 +61,6 @@ body {
   font-size: 12px;
   line-height: 12px;
   text-align: start;
-  font-family: sans-serif;
   color: #cccccc;
   text-wrap: nowrap;
 }
@@ -73,7 +72,6 @@ body {
 #bottom p {
   font-size: 14px;
   line-height: 16px;
-  font-family: sans-serif;
   font-weight: 600;
   text-wrap: nowrap;
 }
@@ -102,7 +100,6 @@ body {
   padding: 10px;
   font-size: 15px;
   line-height: 15px;
-  font-family: sans-serif;
 }
 
 #search:focus {
@@ -151,7 +148,6 @@ body {
 #flag-container p {
   font-size: 14px;
   line-height: 15px;
-  font-family: sans-serif;
   font-weight: 600;
   color: white;
   margin-left: 3px;
@@ -182,7 +178,6 @@ body {
   font-size: 12px;
   line-height: 14px;
   text-align: start;
-  font-family: sans-serif;
   text-wrap: nowrap;
 }
 
@@ -191,7 +186,6 @@ body {
   line-height: 14px;
   text-align: start;
   font-weight: 600;
-  font-family: sans-serif;
 }
 
 #return-container {
@@ -205,14 +199,12 @@ body {
 
 #return-container p {
   font-size: 12px;
-  font-family: sans-serif;
   line-height: 14px;
   color: white;
 }
 
 #order p {
   font-size: 14px;
-  font-family: sans-serif;
   line-height: 14px;
   font-weight: 600;
   color: white;
@@ -236,7 +228,6 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-weight: 550;
-  font-family: sans-serif;
   margin-top: 10px;
 }
 
@@ -299,7 +290,6 @@ body {
 
 #first-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #first-lang label:hover {
@@ -326,7 +316,6 @@ hr {
 
 #second-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #second-lang label:hover {
@@ -349,7 +338,6 @@ hr {
 
 #third-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #third-lang label:hover {
@@ -372,7 +360,6 @@ hr {
 
 #fourth-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #fourth-lang label:hover {
@@ -395,7 +382,6 @@ hr {
 
 #fifth-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #fifth-lang label:hover {
@@ -418,7 +404,6 @@ hr {
 
 #sixth-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #sixth-lang label:hover {
@@ -441,7 +426,6 @@ hr {
 
 #seventh-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #seventh-lang label:hover {
@@ -464,7 +448,6 @@ hr {
 
 #eighth-lang label {
   font-size: 13px;
-  font-family: sans-serif;
 }
 
 #eighth-lang label:hover {
@@ -481,7 +464,6 @@ hr {
   text-decoration: none;
   font-size: 13px;
   color: #0066c0;
-  font-family: sans-serif;
 }
 
 #p {
@@ -493,7 +475,6 @@ hr {
 #p p {
   font-size: 13px;
   color: black;
-  font-family: sans-serif;
   font-weight: 100;
 }
 
@@ -564,7 +545,6 @@ hr {
   border: none;
   border-radius: 10px;
   background-color: #ffd814;
-  font-family: sans-serif;
   font-size: 13px;
   line-height: 30px;
 }
@@ -579,7 +559,6 @@ a {
   text-align: center;
   margin-top: 7px;
   font-size: 11px;
-  font-family: sans-serif;
   padding-bottom: 10px;
 }
 
@@ -608,7 +587,6 @@ a {
   text-align: start;
   font-size: 16px;
   font-weight: 600;
-  font-family: sans-serif;
 }
 
 .anchor {
@@ -625,7 +603,6 @@ a {
   text-align: start;
   font-size: 16px;
   font-weight: 600;
-  font-family: sans-serif;
 }
 
 .content {
@@ -671,11 +648,34 @@ a {
 #slider-content {
   width: 100%;
   height: 600px;
+  position: absolute;
+  z-index: -10;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  
+
 }
 
-#poster {
+#arrow{
+  top: 30%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  top: 6%;
+  padding: 0px 30px;
+}
+
+
+
+
+.poster {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: width 5s linear;
 }
 
 #hamburger {
@@ -709,10 +709,11 @@ a {
 }
 
 #cat-all-containers {
-  width: 365px;
-  overflow-y: scroll;
-  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  height: 91%;
   overflow-x: hidden;
+  padding-bottom: 20px;
 }
 
 #user {
@@ -729,7 +730,6 @@ a {
 
 #user p {
   font-size: 19px;
-  font-family: sans-serif;
   font-weight: 600;
 }
 
@@ -743,7 +743,6 @@ a {
   height: 44px;
   font-size: 18px;
   line-height: 24px;
-  font-family: sans-serif;
   display: flex;
   align-items: center;
   padding: 13px 36px;
@@ -753,7 +752,6 @@ a {
   width: 365px;
   height: 42px;
   font-size: 14px;
-  font-family: sans-serif;
   display: flex;
   align-items: center;
   padding: 13px 36px;
@@ -783,14 +781,14 @@ a {
 }
 
 #card-content {
-  position: absolute;
   width: 100%;
   height: auto;
-  top: 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px 30px;
+  margin-top: 300px;
+  
 }
 
 .card {
@@ -807,7 +805,6 @@ a {
 .title {
   width: 100%;
   font-size: 21px;
-  font-family: sans-serif;
   line-height: 27px;
   font-weight: 600;
 }
@@ -841,7 +838,6 @@ a {
   font-size: 12px;
   margin-top: 2px;
   line-height: 15px;
-  font-family: sans-serif;
 }
 
 .explore {
@@ -862,7 +858,7 @@ a {
 #mobiledata-container {
   width: 100%;
   height: auto;
-  margin-top: 740px;
+
   padding: 0 42px;
 }
 
@@ -883,7 +879,6 @@ a {
 
 #mobiledata-head {
   font-size: 21px;
-  font-family: sans-serif;
   font-weight: 600;
   margin-top: 7px;
 }
@@ -894,7 +889,6 @@ a {
 
 #mobiledata-head a {
   font-size: 14px;
-  font-family: sans-serif;
   margin-left: 10px;
   text-decoration: none;
 }
@@ -1155,3 +1149,5 @@ a {
 #affiliate p {
   font-size: 12px;
 }
+
+
