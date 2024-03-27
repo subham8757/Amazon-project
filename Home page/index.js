@@ -12,16 +12,8 @@ let arr = [
   "Mobiles",
   "Today's Deals",
   "Electronics",
-  "Prime",
-  "Customer Service",
-  "New Releases",
-  "Home & Kitchen",
-  "Gift Ideas",
-  "Fashion",
-  "Amazon Pay",
-  "Computers",
-  "Books",
-  " Coupons",
+  "Prime"
+  
 ];
 
 arr.forEach(function (element) {
@@ -41,7 +33,7 @@ click.addEventListener("click", function () {
   let show = document.getElementById("slide-content");
 
   show.style.display = "block";
-  document.querySelector('body').style.overflow = "hidden"
+  document.querySelector("body").style.overflow = "hidden";
 
   let hamburgershow = document.getElementById("hamburger-backgroud");
   hamburgershow.style.display = "block";
@@ -51,7 +43,7 @@ let click2 = document.getElementById("cross");
 click2.addEventListener("click", function () {
   let hamburgershow = document.getElementById("hamburger-backgroud");
   hamburgershow.style.display = "none";
-  document.querySelector('body').style.overflow = "auto"
+  document.querySelector("body").style.overflow = "auto";
 
   let show = document.getElementById("slide-content");
   show.style.display = "none";
@@ -184,7 +176,7 @@ function display(data) {
   for (let i = 0; i < data.length; i++) {
     let card = document.createElement("div");
     card.setAttribute("class", "card");
-    
+
     let title = document.createElement("p");
     title.setAttribute("class", "title");
     title.innerText = data[i].title;
@@ -318,65 +310,65 @@ function mobiledatashow(data) {
   }
 }
 
+let left = document.getElementById("left-arrow");
+let right = document.getElementById("right-arrow");
 
-
-
-
-let left=document.getElementById("left-arrow")
-let right=document.getElementById("right-arrow")
-
-let slider=document.getElementById("slider-content");
-let slidernumber=0;
+let slider = document.getElementById("slider-content");
+let slidernumber = 0;
 let sliderImages = [
   {
-    src : "slider images/first.jpg",
-    name : "poster"
+    src: "slider images/first.jpg",
+    name: "poster",
   },
   {
-    src : "slider images/second.jpg",
-    name : "poster"
-  }, {
-    src : "slider images/third.jpg",
-    name : "poster"
-  }, {
-    src : "slider images/fourth.jpg",
-    name : "poster"
-  }, {
-    src : "slider images/fifith.jpg",
-    name : "poster"
-  }, {
-    src : "slider images/sixth.jpg",
-    name : "poster"
-  }
+    src: "slider images/second.jpg",
+    name: "poster",
+  },
+  {
+    src: "slider images/third.jpg",
+    name: "poster",
+  },
+  {
+    src: "slider images/fourth.jpg",
+    name: "poster",
+  },
+  {
+    src: "slider images/fifith.jpg",
+    name: "poster",
+  },
+  {
+    src: "slider images/sixth.jpg",
+    name: "poster",
+  },
 ];
 
- setCurrenSliderImage(slidernumber)
+setCurrenSliderImage(slidernumber);
 
-function setCurrenSliderImage(index){
+function setCurrenSliderImage(index) {
   let currentImg = sliderImages[index];
-  let className = `poster-${index}`
+  let className = `poster-${index}`;
   slider.innerHTML = `<img src="${currentImg.src}" alt=${currentImg.name} class="poster ${className}" />`;
 }
 
-console.log(sliderImages)
+console.log(sliderImages);
 
-
-right.addEventListener("click",function(){
-  if(slidernumber === sliderImages.length){
+right.addEventListener("click", function () {
+  if (slidernumber === sliderImages.length-1) {
+    slidernumber = 0;
+    setCurrenSliderImage(slidernumber);
     return;
   }
-  slidernumber++
-  setCurrenSliderImage(slidernumber)
- 
-})
+  slidernumber++;
+  setCurrenSliderImage(slidernumber);
+});
 
-left.addEventListener("click",function(){
-  slidernumber--
-  setCurrenSliderImage(slidernumber)
+left.addEventListener("click", function () {
+  if (slidernumber === 0 ) {
+    slidernumber = sliderImages.length-1;
+    setCurrenSliderImage(slidernumber);
+    return;
+  }
+  slidernumber--;
+  setCurrenSliderImage(slidernumber);
   return;
- 
-
-})
-
-
-
+});
