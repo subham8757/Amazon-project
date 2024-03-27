@@ -632,7 +632,8 @@ a {
 #all-filters {
   width: 20%;
   height: 100%;
-  background-color: red;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
 #products {
@@ -640,7 +641,7 @@ a {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 10px;
 }
 
@@ -697,4 +698,124 @@ a {
 .text {
   font-size: 12px;
   line-height: 20px;
+}
+
+#star1 i {
+  color: #dc6c00;
+}
+
+#star1 pre {
+  font-size: 12px;
+}
+#star2 pre {
+  font-size: 12px;
+}
+#star3 pre {
+  font-size: 12px;
+}
+#star4 pre {
+  font-size: 12px;
+}
+
+#star2 i {
+  color: #dc6c00;
+}
+#star3 i {
+  color: #dc6c00;
+}
+#star4 i {
+  color: #dc6c00;
+}
+
+#star1 {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+#star2 {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+#star3 {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+#star4 {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+.star-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#customer {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#title-filter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#price-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#under-300 {
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#under-300-500 {
+  font-size: 14px;
+  width: 100%;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+#under-500-1000 {
+  font-size: 14px;
+  width: 100%;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+#under-1000-1500 {
+  font-size: 14px;
+  width: 100%;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+#brand-filter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#brand {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#labelofketch {
+  font-size: 14px;
+}
+
+.checkbox-cont {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

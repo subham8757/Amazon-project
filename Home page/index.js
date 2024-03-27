@@ -390,7 +390,7 @@ let data = [
   { title: "SYMBOL", price: 600, rating: 3, image: "shirt/shirt5.webp"
   ,category:"shirt" },
   { title: "Lymio", price: 700, rating: 3, image: "shirt/shirt6.webp" ,category:"shirt"},
-  { title: "Majestic Man", price: 4, rating: 3, image: "shirt/shirt7.webp" ,category:"shirt" },
+  { title: "Majestic Man", price: 405, rating: 3, image: "shirt/shirt7.webp" ,category:"shirt" },
   { title: "Indo Primo", price: 401, rating: 2, image: "shirt/shirt8.webp",category:"shirt" },
   { title: "Lymio", price: 502, rating: 3, image: "shirt/shirt9.webp",category:"shirt" },
   { title: "ketch", price: 604, rating: 3, image: "shirt/shirt10.webp",category:"shirt" },
