@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="navbar">
+          <div id="logodiv" class="border">
+            <img src="../Home page/PngItem_12080.png" alt="" id="logo" />
+          </div>
+  
+          <div id="location-container" class="border">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+  
+            <div id="address">
+              <div id="top">
+                <p>Delivering to New Delhi 110043</p>
+              </div>
+  
+              <div id="bottom">
+                <p>Update location</p>
+              </div>
+            </div>
+          </div>
+  
+          <div id="searchbar-container">
+            <div>
+              <select id="select">
+                <option value="">All</option>
+              </select>
+            </div>
+  
+            <div id="searhinput-cont">
+              <input type="text" placeholder="Search Amazon.in" id="search" />
+            </div>
+  
+            <div id="searchbtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+  
+          <div id="flag-container" class="border">
+            <div id="flag">
+              <img src="https://flagsapi.com/IN/flat/64.png" id="flagimg" />
+            </div>
+            <div>
+              <p>EN</p>
+            </div>
+  
+            <div>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+  
+            <div class="background"></div>
+  
+            <div id="flag-container-content">
+              <div id="first-lang">
+                <input
+                  type="radio"
+                  id="english"
+                  name="language"
+                  value="english"
+                />
+                <label for="english">English -EN</label>
+              </div>
+  
+              <hr />
+  
+              <div id="second-lang">
+                <input type="radio" id="hindi" name="language" value="hindi" />
+                <label for="hindi">Hindi -HI</label>
+              </div>
+  
+              <div id="third-lang">
+                <input type="radio" id="tamil" name="language" value="tamil" />
+                <label for="tamil">Tamil -TA</label>
+              </div>
+  
+              <div id="fourth-lang">
+                <input type="radio" id="telgu" name="language" value="telgu" />
+                <label for="telgu">Telgu -TA</label>
+              </div>
+  
+              <div id="fifth-lang">
+                <input
+                  type="radio"
+                  id="kannada"
+                  name="language"
+                  value="kannada"
+                />
+                <label for="kannada">Kannada -KA</label>
+              </div>
+  
+              <div id="sixth-lang">
+                <input
+                  type="radio"
+                  id="malayalam"
+                  name="language"
+                  value="malayalam"
+                />
+                <label for="malayalam">Malayalam -MA</label>
+              </div>
+  
+              <div id="seventh-lang">
+                <input
+                  type="radio"
+                  id="bengali"
+                  name="language"
+                  value="bengali"
+                />
+                <label for="bengali">Bengali -BE</label>
+              </div>
+  
+              <div id="eighth-lang">
+                <input
+                  type="radio"
+                  id="marathi"
+                  name="language"
+                  value="marathi"
+                />
+                <label for="marathi">Marathi -MA</label>
+              </div>
+  
+              <div id="learn">
+                <a href="">Learn more</a>
+              </div>
+  
+              <hr />
+  
+              <div id="p">
+                <div id="flag2">
+                  <img src="https://flagsapi.com/IN/flat/64.png" id="flagimg2" />
+                </div>
+                <div>
+                  <p>You are shoping on Amazon.in</p>
+                </div>
+              </div>
+  
+              <div id="change">
+                <a href="">Change country/region.</a>
+              </div>
+            </div>
+          </div>
+  
+          <div id="signin-container" class="border">
+            <div>
+              <p>Hello, sign in</p>
+            </div>
+  
+            <div id="account">
+              <p>Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+  
+            <div class="background"></div>
+  
+            <div id="signin-cont">
+              <div id="homepage-signin">
+                <div>
+                  <button id="signinbtn">Sign</button>
+                </div>
+  
+                <div>
+                  <p>
+                    new customer?
+                    <a href="../Authentication/sign up/signup.html"
+                      >start here.</a
+                    >
+                  </p>
+                </div>
+              </div>
+  
+              <div id="homepage-signin-content">
+                <div id="left-content">
+                  <div>
+                    <p>Your Lists</p>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Create a Wish List</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Wish from any website</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Baby Wishlist</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Discover Your Style</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Explore Your Showroom</a>
+                  </div>
+                </div>
+  
+                <div id="right-content">
+                  <div>
+                    <p>Your Lists</p>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Your account</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Your orders</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">your Wish List</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Your Prime Memberships</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Your Subscribe and Save items</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Memberships & Subscription</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Your Seller Account</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content">Manage your Content and Devices</a>
+                  </div>
+  
+                  <div class="anchor">
+                    <a href="" class="content"
+                      >Your Free Amazon Business Account</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div id="return-container" class="border">
+            <div>
+              <p>Returns</p>
+            </div>
+  
+            <div id="order">
+              <p>& Orders</p>
+            </div>
+          </div>
+  
+          <div id="cart" class="border">
+            <div>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+  
+            <div id="carttext">
+              <p>Cart</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+<div id="hamburger-content">
+    
+  <i class="fa-solid fa-bars"></i>
+    <p>All</p>
+    <p>Fresh</p>
+    <p>Amazon Prime TV</p>
+    <P>Sell</P>
+    <p>Best Seller</p>
+    <p>Mobiles</p> 
+
+</div>
+
+
+
+<div id="main-container">
+
+  <div id="all-filters">
+     hello
+  </div>
+
+  <div id="products">
+      
+
+  </div>
+
+</div>
+   
+</body>
+<script src="search.js">
+
+</script>
+</html>

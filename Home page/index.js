@@ -372,3 +372,102 @@ left.addEventListener("click", function () {
   setCurrenSliderImage(slidernumber);
   return;
 });
+
+
+
+let data = [
+  { title: "ketch", price: 269, rating: 3, image: "shirt/shirt1.webp" ,category:"shirt" },
+  { title: "Allen solly", price: 495, rating: 4, image: "shirt/shirt2.webp" ,category:"shirt" },
+  {
+    title: "U.S. POLO ASSN.",
+    price: 458,
+    rating: 2,
+    image: "shirt/shirt3.webp"
+    ,category:"shirt",
+  },
+  { title: "Van heusen", price: 494, rating: 4, image: "shirt/shirt4.webp" 
+  ,category:"shirt"},
+  { title: "SYMBOL", price: 600, rating: 3, image: "shirt/shirt5.webp"
+  ,category:"shirt" },
+  { title: "Lymio", price: 700, rating: 3, image: "shirt/shirt6.webp" ,category:"shirt"},
+  { title: "Majestic Man", price: 4, rating: 3, image: "shirt/shirt7.webp" ,category:"shirt" },
+  { title: "Indo Primo", price: 401, rating: 2, image: "shirt/shirt8.webp",category:"shirt" },
+  { title: "Lymio", price: 502, rating: 3, image: "shirt/shirt9.webp",category:"shirt" },
+  { title: "ketch", price: 604, rating: 3, image: "shirt/shirt10.webp",category:"shirt" },
+  {
+    title: "Majestic Man",
+    price: 1001,
+    rating: 3,
+    image: "shirt/shirt11.webp"
+    ,category:"shirt",
+  },
+  { title: "Lymio", price: 602, rating: 4, image: "shirt/shirt12.webp" ,category:"shirt"},
+  { title: "Van heusen", price: 583, rating: 3, image: "shirt/shirt13.webp" ,category:"shirt"},
+  { title: "Indo Primo", price: 459, rating: 2, image: "shirt/shirt14.webp",category:"shirt" },
+  { title: "ketch", price: 678, rating: 4, image: "shirt/shirt15.webp" ,category:"shirt"},
+  { title: "Van heusen", price: 680, rating: 2, image: "shirt/shirt16.webp" ,category:"shirt"},
+  { title: "ketch", price: 790, rating: 2, image: "shirt/shirt17.webp" ,category:"shirt"},
+  { title: "ketch", price: 559, rating: 4, image: "shirt/shirt18.webp" ,category:"shirt"},
+  { title: "Indo Primo", price: 302, rating: 3, image: "shirt/shirt19.webp" ,category:"shirt" },
+  { title: "ketch", price: 602, rating: 3, image: "shirt/shirt20.webp" ,category:"shirt"},
+  { title: "Van heusen", price: 590, rating: 2, image: "shirt/shirt21.webp" ,category:"shirt"},
+  { title: "ketch", price: 580, rating: 3, image: "shirt/shirt22.webp" ,category:"shirt"},
+  { title: "Indo Primo", price: 702, rating: 4, image: "shirt/shirt23.webp" ,category:"shirt"},
+  { title: "ketch", price: 605, rating: 4, image: "shirt/shirt24.webp" ,category:"shirt" },
+  { title: "Van heusen", price: 522, rating: 2, image: "shirt/shirt25.webp",category:"shirt"},
+
+
+  { title: "SYMBOL", price: 702, rating: 5, image: "paint/paint1.webp",category:"paint"},
+  { title: "Park Avenue", price: 802, rating: 4, image: "paint/paint2.webp",category:"paint"},
+  { title: "Ben Martin", price: 900, rating: 5, image: "paint/paint3.webp",category:"paint"},
+  { title: "Swadesi Stuff", price: 1002, rating:3, image: "paint/paint4.webp",category:"paint"},
+  { title: "Peter England", price: 1100, rating: 2, image: "paint/paint5.webp",category:"paint"},
+  { title: "Urbano fashion", price: 1200, rating: 2, image: "paint/paint6.webp",category:"paint"},
+  { title: "Van heusen", price: 490, rating: 2, image: "paint/paint7.webp",category:"paint"},
+  { title: "Ben Martin", price: 600, rating: 3, image: "paint/paint8.webp",category:"paint"},
+  { title: "Van heusen", price: 690, rating: 2, image: "paint/paint9.webp",category:"paint"},
+  { title: "Ben Martin", price: 800, rating: 3, image: "paint/paint10.webp",category:"paint"},
+  { title: "Park Avenue", price: 790, rating: 4, image: "paint/paint11.webp",category:"paint"},
+  { title: "Van heusen", price: 800, rating: 5, image: "paint/paint12.webp",category:"paint"},
+  { title: "Swadesi Stuff", price: 602, rating: 5, image: "paint/paint13.webp",category:"paint"},
+  { title: "Park Avenue", price: 678, rating: 4, image: "paint/paint14.webp",category:"paint"},
+  { title: "Van heusen", price: 999, rating: 4, image: "paint/paint15.webp",category:"paint"},
+  { title: "Ben Martin", price: 988, rating: 3, image: "paint/paint16.webp",category:"paint"},
+  { title: "Van heusen", price: 789, rating: 2, image: "paint/paint17.webp",category:"paint"},
+  { title: "Park Avenue", price: 560, rating: 1, image: "paint/paint18.webp",category:"paint"},
+  { title: "Van heusen", price: 458, rating: 5, image: "paint/paint19.webp",category:"paint"},
+  { title: "Park Avenue", price: 807, rating: 4, image: "paint/paint20.webp",category:"paint"}
+];
+
+
+
+
+
+
+
+let searchbutton=document.getElementById("searchbtn")
+
+
+searchbutton.addEventListener("click",()=>{
+  let searchproduct=document.getElementById("search").value
+
+  let matchdata=[]
+
+  for(let i=0; i<data.length; i++){
+
+    if(searchproduct===data[i].category){
+      matchdata.push(data[i])
+    }
+
+  }
+
+  console.log(matchdata)
+
+  
+  localStorage.setItem("matchdata", JSON.stringify(matchdata))
+
+  
+    let a =document.createElement("a")
+    a.setAttribute("href","../search-page/search.html")
+    a.click()    
+})
