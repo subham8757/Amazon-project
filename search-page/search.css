@@ -700,49 +700,63 @@ a {
   line-height: 20px;
 }
 
-#star1 i {
+#star-1 i {
   color: #dc6c00;
 }
 
-#star1 pre {
+#star-1 :hover{
+  color: #df6c00;
+}
+#star-2 :hover{
+  color: #df6c00;
+}
+#star-3 :hover{
+  color: #df6c00;
+}
+#star-4 :hover{
+  color: #df6c00;
+}
+
+
+#star-1 pre {
   font-size: 12px;
 }
-#star2 pre {
+#star-2 pre {
   font-size: 12px;
 }
-#star3 pre {
+#star-3 pre {
   font-size: 12px;
 }
-#star4 pre {
+#star-4 pre {
   font-size: 12px;
 }
 
-#star2 i {
+#star-2 i {
   color: #dc6c00;
 }
-#star3 i {
+#star-3 i {
   color: #dc6c00;
 }
-#star4 i {
+#star-4 i {
   color: #dc6c00;
 }
 
-#star1 {
+#star-1 {
   width: 100%;
   display: flex;
   cursor: pointer;
 }
-#star2 {
+#star-2 {
   width: 100%;
   display: flex;
   cursor: pointer;
 }
-#star3 {
+#star-3 {
   width: 100%;
   display: flex;
   cursor: pointer;
 }
-#star4 {
+#star-4 {
   width: 100%;
   display: flex;
   cursor: pointer;

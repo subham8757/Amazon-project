@@ -46,55 +46,223 @@ function productdisplay(data) {
   }
 }
 
-let star1 = document.getElementById("star1");
-star1.addEventListener("click", function () {
-  let fourstar = [];
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].rating >= 4) {
-      fourstar.push(data[i]);
+
+function starfilter(num){
+    
+     let matchdata=[]
+    
+
+     for(let i=0; i<data.length; i++){
+
+        if(data[i].rating>=num){
+             matchdata.push(data[i])
+        }
+      
+     }
+
+     
+     document.getElementById("products").innerHTML=null
+     productdisplay(matchdata)
+
+}
+
+// let star1flag=true;
+// let star1=document.getElementById("star1")
+// star1.addEventListener("click",function(){
+//   let up= document.getElementById("star1up")
+//      if(star1flag===true){
+//           star1.style.fontSize="17px"
+//           up.style.fontSize="13px"
+//           up.style.fontWeight="600"
+//           starfilter(4)
+//           star1flag=false;
+        
+//      }else{
+        
+//          star1.style.fontSize="16px"
+//          up.style.fontSize="12px"
+//          up.style.fontWeight="normal"
+//          productdisplay(data)
+//          star1flag=true
+         
+//      }
+     
+// })
+
+
+
+// let star2flag=true;
+// let star2=document.getElementById("star2")
+// star2.addEventListener("click",function(){
+//   let up= document.getElementById("star2up")
+//      if(star2flag===true){
+//           star2.style.fontSize="17px"
+//           up.style.fontSize="13px"
+//           up.style.fontWeight="600"
+//           starfilter(3)
+//           star2flag=false;
+//      }else{   
+//          star2.style.fontSize="16px"
+//          up.style.fontSize="12px"
+//          up.style.fontWeight="normal"
+//          productdisplay(data)
+//          star2flag=true
+//      }
+     
+// })
+
+
+
+
+// let star3flag=true;
+// let star3=document.getElementById("star3")
+// star3.addEventListener("click",function(){
+//   let up= document.getElementById("star3up")
+//      if(star3flag===true){
+//           star3.style.fontSize="17px"
+//           up.style.fontSize="13px"
+//           up.style.fontWeight="600"
+//           starfilter(2)
+//           star3flag=false;
+//      }else{   
+//          star3.style.fontSize="16px"
+//          up.style.fontSize="12px"
+//          up.style.fontWeight="normal"
+//          productdisplay(data)
+//          star3flag=true
+//      }
+     
+// })
+
+
+
+// let star4flag=true;
+// let star4=document.getElementById("star4")
+// star4.addEventListener("click",function(){
+//   let up= document.getElementById("star4up")
+//      if(star4flag===true){
+//           star4.style.fontSize="17px"
+//           up.style.fontSize="13px"
+//           up.style.fontWeight="600"
+//           starfilter(1)
+//           star4flag=false;
+//      }else{   
+//          star4.style.fontSize="16px"
+//          up.style.fontSize="12px"
+//          up.style.fontWeight="normal"
+//          productdisplay(data)
+//          star4flag=true
+//      }
+     
+// })
+
+// let clickedStar = null;
+
+// function applyStarFilter(event) {
+//   console.log('mcoaiwuehfoac', event.target.parentElement.id)
+  
+//   let upId = document.getElementById(`${event.target.parentElement.id}-pre`)
+
+//   if ( clickedStar === event.target.parentElement.id.split("-")[1] ) {
+//     clickedStar = null
+//     upId.style.fontSize = '10px'
+//   } else {
+//     clickedStar = event.target.parentElement.id.split("-")[1]
+//     upId.style.fontSize = '20px'
+//   }
+  
+//   console.log({clickedStar})
+//   starfilter(clickedStar)
+// } 
+
+// function attachEventListnerToAllStar () {
+//   document.getElementById("star-1").addEventListener('click', (event) => applyStarFilter(event))
+// }
+// attachEventListnerToAllStar()
+
+
+
+let clickstar=null
+
+function starClicked(event){
+
+    let up=document.getElementById(`${event.target.parentElement.id}-pre`)
+    
+    if(clickstar===event.target.parentElement.id.split("-")[1]){
+      clickstar=null
+      up.style.fontSize="12px"
+      up.style.fontWeight="normal"
+      
+    }else{
+      up.style.fontSize="13px"
+      up.style.fontWeight="600"
+      clickstar=event.target.parentElement.id.split("-")[1]
     }
-  }
 
-  document.getElementById("products").innerHTML = null;
-  productdisplay(fourstar);
-});
+   console.log(clickstar)
+   starfilter(clickstar)
 
-let star2 = document.getElementById("star2");
-star2.addEventListener("click", function () {
-  let fourstar = [];
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].rating >= 3) {
-      fourstar.push(data[i]);
-    }
-  }
+}
 
-  document.getElementById("products").innerHTML = null;
-  productdisplay(fourstar);
-});
-let star3 = document.getElementById("star3");
-star3.addEventListener("click", function () {
-  let fourstar = [];
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].rating >= 2) {
-      fourstar.push(data[i]);
-    }
-  }
 
-  document.getElementById("products").innerHTML = null;
-  productdisplay(fourstar);
-});
-let star4 = document.getElementById("star4");
-star4.addEventListener("click", function () {
-  let fourstar = [];
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].rating >= 1) {
-      fourstar.push(data[i]);
-    }
-  }
 
-  document.getElementById("products").innerHTML = null;
-  productdisplay(fourstar);
-});
+
+
+
+
+
+
+
+
+// let star1 = document.getElementById("star1");
+// star1.addEventListener("click", function () {
+//   let fourstar = [];
+//   for (let i = 0; i < data.length; i++) {
+//     if (data[i].rating >= 4) {
+//       fourstar.push(data[i]);
+//     }
+//   }
+
+//   document.getElementById("products").innerHTML = null;
+//   productdisplay(fourstar);
+// });
+
+// let star2 = document.getElementById("star2");
+// star2.addEventListener("click", function () {
+//   let fourstar = [];
+//   for (let i = 0; i < data.length; i++) {
+//     if (data[i].rating >= 2) {
+//       fourstar.push(data[i]);
+//     }
+//   }
+
+//   document.getElementById("products").innerHTML = null;
+//   productdisplay(fourstar);
+// });
+// let star3 = document.getElementById("star3");
+// star3.addEventListener("click", function () {
+//   let fourstar = [];
+//   for (let i = 0; i < data.length; i++) {
+//     if (data[i].rating >= 2) {
+//       fourstar.push(data[i]);
+//     }
+//   }
+
+//   document.getElementById("products").innerHTML = null;
+//   productdisplay(fourstar);
+// });
+// let star4 = document.getElementById("star4");
+// star4.addEventListener("click", function () {
+//   let fourstar = [];
+//   for (let i = 0; i < data.length; i++) {
+//     if (data[i].rating >= 1) {
+//       fourstar.push(data[i]);
+//     }
+//   }
+
+//   document.getElementById("products").innerHTML = null;
+//   productdisplay(fourstar);
+// });
 
 let under300 = document.getElementById("under-300");
 
